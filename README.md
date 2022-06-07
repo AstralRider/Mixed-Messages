@@ -1,0 +1,1 @@
+This is a Codecademy project by an extreme beginner :)
