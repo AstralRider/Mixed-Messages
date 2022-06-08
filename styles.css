@@ -1,0 +1,28 @@
+html, body {
+    margin:0;
+    padding:0;
+    height: 100%
+}
+body {
+  background-color: #12181b;
+}
+
+
+.waves {
+  background-image: url('assets/layered-waves-haikei.svg');
+  aspect-ratio: 960/540;
+  width: 100%;
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  bottom: 0px;
+}
+    
+.nav {
+  background-color: #2a2e35;
+  width: 100%;
+  height: 3rem;  
+}
+
