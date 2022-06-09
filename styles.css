@@ -2,10 +2,12 @@ html, body {
     margin:0;
     padding:0;
     height: 100%
+    
 }
 body {
   background-color: #12181b;
 }
+
 
 
 .waves {
@@ -23,7 +25,7 @@ body {
   background-color: #2a2e35;
   width: 100%;
   height: 3rem;
-  position: fixed;
+  position: static;
   top: 0;  
   display: flex;
   justify-content: center;
@@ -38,4 +40,24 @@ li {
   font-family: 'Roboto', sans-serif;
   font-weight: 1000;
   font-size: 2rem;
+}
+
+.main-content{
+  display:flex;
+  max-height: 50rem;
+  justify-content: center;
+  margin-top: 5rem;
+  gap: 10rem;
+  
+}
+
+
+
+a, p {
+  color: aliceblue;  
+}
+
+a {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
