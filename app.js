@@ -11,7 +11,7 @@ const getData = async () => {
         const response = await fetch('https://icanhazdadjoke.com/', options)
         if(response.ok) {
             const jsonResponse = await response.json();
-            console.log(jsonResponse)
+            return document.getElementById('joke').innerHTML = jsonResponse.joke
         }
         throw new Error('Request failed!')
 
@@ -22,3 +22,4 @@ const getData = async () => {
 };
 
 getData()
+
