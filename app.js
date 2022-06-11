@@ -1,4 +1,3 @@
-
 const getData = async () => {
     const options = { 
         method: 'GET',
@@ -11,15 +10,16 @@ const getData = async () => {
         const response = await fetch('https://icanhazdadjoke.com/', options)
         if(response.ok) {
             const jsonResponse = await response.json();
-            return document.getElementById('joke').innerHTML = jsonResponse.joke
+            const { joke } = jsonResponse
+            return document.getElementById('joke').innerHTML = joke
         }
         throw new Error('Request failed!')
 
     } catch(error) {
         console.log(error)
     }
-
 };
 
-getData()
+const generateJoke = document.getElementById('button');
+generateJoke.addEventListener("click", getData);
 
