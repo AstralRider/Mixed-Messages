@@ -1,4 +1,5 @@
 const getData = async () => {
+    
     const options = { 
         method: 'GET',
         headers: {

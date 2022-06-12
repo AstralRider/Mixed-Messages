@@ -1,4 +1,4 @@
-html, body {
+ html, body {
     margin:0;
     padding:0;
     height: 100%
@@ -10,16 +10,16 @@ body {
 
 
 
-.waves {
+/* .waves {
   background-image: url('assets/layered-waves-haikei.svg');
   aspect-ratio: 960/540;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: absolute;
+  position: fixed;
   bottom: 0px;
-}
+} */
     
 .nav {
   background-color: #2a2e35;
@@ -38,17 +38,19 @@ li {
   list-style: none;
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
-  font-weight: 1000;
+  font-weight: 500;
   font-size: 2rem;
 }
 
 .main-content{
   display:flex;
   max-height: 50rem;
-  justify-content: space-around;
-  margin-top: 5rem;
+  justify-content: space-evenly;
+  margin: 5rem auto;
   align-items: center;
-  /* gap: 10rem; */
+  max-width: 50rem;
+  gap: 1rem;
+  
   
 }
 
@@ -71,6 +73,35 @@ li {
 }
 
 p{
+  display: flex;
   padding: 1rem 0;
   color: whitesmoke;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 580px) {
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 85%;
+  }
+
+  p{
+    text-align: center;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  ul, li {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0;
+  }
+
+
 }
