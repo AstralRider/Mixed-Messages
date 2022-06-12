@@ -44,7 +44,7 @@ li {
 
 .main-content{
   display:flex;
-  max-height: 50rem;
+  max-height: 55rem;
   justify-content: space-evenly;
   margin: 5rem auto;
   align-items: center;
@@ -69,6 +69,7 @@ li {
     margin-top: 1rem;
     margin-bottom: 1rem;
     background-color: #12181b;
+    cursor: pointer;
   
 }
 
@@ -78,6 +79,7 @@ p{
   color: whitesmoke;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 35rem;
 }
 
 @media only screen and (max-width: 580px) {
@@ -98,10 +100,19 @@ p{
   }
 
   ul, li {
-    font-size: 1rem;
+    font-size: 1.25rem;
     text-align: center;
     padding: 0;
   }
 
 
+}
+
+ button:hover {
+  transition: 0.2s all;
+  
+} 
+
+button:active {
+  transform: scale(0.98);
 }
